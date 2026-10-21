@@ -521,9 +521,9 @@
     "Thailand",
     "Thailand_Gateway_Guide.pdf"
   ],
-  "timor-leste": [
+  "east-timor": [
     "East Timor",
-    "Timor-Leste_Gateway_Guide.pdf"
+    "East_Timor_Gateway_Guide.pdf"
   ],
   "vietnam": [
     "Vietnam",
