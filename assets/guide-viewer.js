@@ -26,7 +26,7 @@
     "Burundi_Gateway_Guide.pdf"
   ],
   "cabo-verde": [
-    "Cabo Verde",
+    "Cape Verde",
     "Cabo_Verde_Gateway_Guide.pdf"
   ],
   "cameroon": [
@@ -522,7 +522,7 @@
     "Thailand_Gateway_Guide.pdf"
   ],
   "timor-leste": [
-    "Timor-Leste",
+    "East Timor",
     "Timor-Leste_Gateway_Guide.pdf"
   ],
   "vietnam": [
