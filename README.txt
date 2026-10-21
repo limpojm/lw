@@ -23,7 +23,7 @@ FONTS (Google Fonts)
   Cormorant Garamond (headings) and Inter (body text)
 
 NOTES FOR THE DEVELOPER
-  * The Country Insights page shows 24 sample countries. The full library of 157 profiles,
+  * The Country Insights page shows 25 sample countries. The full library of 157 profiles,
     the individual country profile pages and the Gateway Guides need to be connected.
   * Article links point to the existing files on www.lordwaverley.com.
   * The language selector (EN) is a placeholder for the 14 language versions.
