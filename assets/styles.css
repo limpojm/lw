@@ -151,16 +151,11 @@ h1,h2,h3{margin:0}
 .countries{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
 .country{border-style:solid;border-width:1px;border-top-width:4px;text-decoration:none;color:var(--navy);padding:24px;display:flex;flex-direction:column;gap:18px;min-height:140px;justify-content:space-between}
 .country:hover{color:var(--navy);filter:brightness(.98)}
+.country:focus-visible{outline:2px solid var(--navy);outline-offset:4px}
 .country .top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
 .country .name{font-family:var(--serif);font-size:26px;font-weight:600;line-height:1.1}
 .country .code{font-size:11px;font-weight:600;letter-spacing:.06em;color:var(--bronze);border:1px solid #D5CEC0;padding:2px 7px;border-radius:2px}
 .country .bottom{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted)}
-.country h2{font:inherit}
-.country .name{color:var(--navy);text-decoration:none}
-.country .name:hover{text-decoration:underline}
-.country-actions{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center}
-.country-actions a{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-size:13px;font-weight:600;text-underline-offset:4px}
-.country a:focus-visible{outline:2px solid var(--navy);outline-offset:4px}
 .guide-toolbar{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:24px;padding-bottom:24px}
 .guide-back,.guide-download{display:inline-flex;align-items:center;min-height:44px;padding:10px 18px;border:1px solid var(--navy);border-radius:2px;font-size:14px;font-weight:600;text-decoration:none;color:var(--navy)}
 .guide-back:hover{background:#fff;color:var(--navy)}
