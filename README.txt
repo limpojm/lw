@@ -22,7 +22,10 @@ FONTS (Google Fonts)
   Cormorant Garamond (headings) and Inter (body text)
 
 NOTES FOR THE DEVELOPER
-  * The Country Insights page shows 24 sample countries. The full library of 157 profiles,
-    the individual country profile pages and the Gateway Guides need to be connected.
+  * Country Insights lists all 157 countries with links to the HTML and PDF Gateway Guides.
+    guide.html embeds the selected guide with the site menu, a back link and PDF download.
+    assets/guide-viewer.js contains the country-to-file catalogue.
+    The individual source guides do not need a copy of the site menu.
+  * Guide files are stored in assets/guides/html/ and assets/guides/pdf/.
   * Article links point to the existing files on www.lordwaverley.com.
   * The language selector (EN) is a placeholder for the 14 language versions.
