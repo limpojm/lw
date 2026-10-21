@@ -27,3 +27,12 @@ NOTES FOR THE DEVELOPER
     the individual country profile pages and the Gateway Guides need to be connected.
   * Article links point to the existing files on www.lordwaverley.com.
   * The language selector (EN) is a placeholder for the 14 language versions.
+
+COUNTRY NAMING
+  * Timor-Leste must be shown as "East Timor" in headings and lists:
+      - Country Insights and Gateway Guides lists: "East Timor" (Asia, South East)
+      - Gateway Guide heading: "East Timor: Waverley Gateway Guide"
+      - Page title: "East Timor | Waverley Gateway Guide"
+    The current guide is at https://www.lordwaverley.com/insights/timor-east-gateway-guide
+    Leave official organisation names in the body text unchanged, for example
+    "Banking and Payments Authority of Timor-Leste" and "TradeInvest Timor-Leste".
