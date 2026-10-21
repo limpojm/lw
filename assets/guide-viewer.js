@@ -25,9 +25,9 @@
     "Burundi",
     "Burundi_Gateway_Guide.pdf"
   ],
-  "cabo-verde": [
+  "cape-verde": [
     "Cape Verde",
-    "Cabo_Verde_Gateway_Guide.pdf"
+    "Cape_Verde_Gateway_Guide.pdf"
   ],
   "cameroon": [
     "Cameroon",
