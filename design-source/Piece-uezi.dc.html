@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Lord Waverley | Contact</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+  <helmet>
+    <style>
+      html, body { margin: 0; height: 100%; }
+    </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#7A5C2E}a:hover{color:#4F3B1C}
+</style>
+  </helmet>
+<section id="contact" style="background: #2F4B57; color: #FFFFFF; position: absolute; left: 0px; top: 0px; right: auto; bottom: auto; margin: 0px; box-sizing: border-box; width: 1440px;">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 104px 24px; display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between; align-items: center">
+      <h2 style="flex: 1 1 480px; min-width: 0; margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: clamp(36px, 4.4vw, 58px); line-height: 1.05; color: #FFFFFF">Start a conversation about your next market.</h2>
+      <div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+        <a href="mailto:office@lordwaverley.com" style="background: {{accent}}; color: #0E1A2B; text-decoration: none; font-weight: 600; padding: 18px 24px; border-radius: 2px; display: flex; justify-content: space-between; align-items: center">office@lordwaverley.com
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+        </a>
+        <div style="display: flex; gap: 12px">
+          <a href="https://uk.linkedin.com/in/lordwaverley" style="flex: 1; text-align: center; border: 1px solid #8FAAB4; color: #FFFFFF; text-decoration: none; padding: 14px; border-radius: 2px; font-weight: 500">LinkedIn</a>
+          <a href="https://x.com/LordWaverley" style="flex: 1; text-align: center; border: 1px solid #8FAAB4; color: #FFFFFF; text-decoration: none; padding: 14px; border-radius: 2px; font-weight: 500">X</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;accent&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#DCCBA4&quot;,&quot;options&quot;:[&quot;#DCCBA4&quot;,&quot;#E6D9BC&quot;,&quot;#9FB4CF&quot;]}}">
+class Component extends DCLogic {
+  renderVals() {
+    var base = 'https://www.lordwaverley.com/';
+    var list = [
+      ['Iran at the Crossroads', 'Paper', base + 'uploads/media/iran-at-the-crossroads-8e8e4d54.pdf'],
+      ['Africa: Age of Optimism', 'Article', base + 'media.php?lang=en&slug=africa-the-age-of-optimism'],
+      ['Arctic: Complexity in the Making', 'Article', base + 'media.php?lang=en&slug=arctic-complexity-in-the-making'],
+      ['Queen Elizabeth II: Tribute', 'Speech', base + 'media.php?lang=en&slug=queen-elizabeth-a-tribute'],
+      ['Saving the Steel Industry', 'Article', base + 'media.php?lang=en&slug=saving-the-steel-industry'],
+      ['Parliament Revealed', 'Website', 'https://www.parliamentrevealed.org/'],
+      ['Challenges & Risks to Achievement of United Nations SDGs', 'Article', base + 'media.php?lang=en&slug=sustainable-development-goals-challenges-risks-to-the-achievement-of-the-sdgs'],
+      ['Silent Giants: Critical Role of MSMEs in Global Future', 'Article', base + 'media.php?lang=en&slug=silent-giants-critical-role-of-msmes-in-the-global-future'],
+      ['China: Global Trade Headwinds', 'Article', base + 'media.php?lang=en&slug=china-global-trade-headwinds'],
+      ['Central Asia (Kazakhstan, Uzbekistan)', 'Paper', base + 'uploads/media/central-asia-i-543153e4.pdf'],
+      ['Central Asia (Kyrgyzstan, Tajikistan, Turkmenistan)', 'Paper', base + 'uploads/media/central-asia-ii-dcde9f63.pdf'],
+      ['Showcase Kazakhstan', 'Paper', base + 'uploads/media/showcase-kazakhstan-06b473c0.pdf'],
+      ['Central African Republic: President visit to London', 'Video', base + 'uploads/media/central-african-republic-president-visit-to-london-d1518f88.mp4'],
+      ['Russia: Diplomacy and Defence of the International Order', 'Paper', base + 'uploads/media/russia-diplomacy-and-defence-of-the-international-order-88535ead.pdf'],
+      ["Canada's trade war with the US won't end with tariffs", 'Op-ed · The Hill', 'https://thehill.com/opinion/international/6076794-us-canada-trade-war-nickel/'],
+      ["Central Asia's Mineral Exits: A Deal to Mine Is Not a Route to Market", 'Paper', base + 'uploads/media/central-asia-s-mineral-exits-97034883.pdf']
+    ];
+    var articles = list.map(function (x, i) {
+      var k = x[1];
+      var c = k === 'Paper' ? { bg: '#0E1A2B', fg: '#FFFFFF', line: '#0E1A2B', tag: '#DCCBA4', muted: '#AEB8C7' }
+        : (k === 'Video' || k === 'Speech') ? { bg: '#2F4B57', fg: '#FFFFFF', line: '#2F4B57', tag: '#F0D9A8', muted: '#C3D3D9' }
+        : k.indexOf('Op-ed') === 0 || k === 'Website' ? { bg: '#DCCBA4', fg: '#0E1A2B', line: '#DCCBA4', tag: '#2A2416', muted: '#3D3320' }
+        : { bg: '#FFFFFF', fg: '#0E1A2B', line: '#E4DFD4', tag: '#7A5C2E', muted: '#5E6878' };
+      return { num: (i < 9 ? '0' : '') + (i + 1), title: x[0], kind: k, href: x[2], bg: c.bg, fg: c.fg, line: c.line, tag: c.tag, muted: c.muted };
+    });
+    return { accent: this.props.accent ?? '#DCCBA4', articles: articles };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Lord Waverley | Country Insights</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#7A5C2E}a:hover{color:#4F3B1C}
+</style>
+</helmet>
+<div style="font-family: Inter, system-ui, sans-serif; color: #1A2433; background: #F7F5F0; line-height: 1.6; min-height: 100vh">
+
+  <header style="background: #0E1A2B; color: #FFFFFF">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 22px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px">
+      <a href="Main.dc.html" style="text-decoration: none; color: #FFFFFF; display: flex; flex-direction: column">
+        <span style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: 28px; font-weight: 700; letter-spacing: 0.08em">LORD WAVERLEY</span>
+        <span style="font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #DCCBA4">International Business &amp; Strategic Advisory</span>
+      </a>
+      <nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 24px; font-size: 14px">
+        <a href="Main.dc.html" style="color: #E6E9EE; text-decoration: none; padding: 10px 0">Advisory</a>
+        <a href="Insights.dc.html" style="color: #FFFFFF; text-decoration: none; padding: 10px 0; border-bottom: 2px solid #DCCBA4">Country Insights</a>
+        <a href="Main.dc.html" style="color: #E6E9EE; text-decoration: none; padding: 10px 0">Gateway Guides</a>
+        <a href="Main.dc.html" style="color: #E6E9EE; text-decoration: none; padding: 10px 0">Articles &amp; Speeches</a>
+        <a href="Main.dc.html" style="color: #E6E9EE; text-decoration: none; padding: 10px 0">About</a>
+        <a href="Main.dc.html" style="background: #DCCBA4; color: #0E1A2B; text-decoration: none; font-weight: 600; padding: 12px 20px; border-radius: 2px">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section style="background: #0E1A2B; color: #FFFFFF; border-top: 1px solid #22314A">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 64px 24px 72px">
+      <p style="margin: 0 0 16px; font-size: 12px; letter-spacing: 0.24em; text-transform: uppercase; color: #DCCBA4">Trade, Investment &amp; Economic Insights</p>
+      <h1 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: clamp(40px, 5vw, 68px); line-height: 1.05">Country Insights</h1>
+      <p style="margin: 20px 0 0; max-width: 620px; font-size: 18px; color: #C7CFDA">Investment assessments for 157 markets, filtered by region and sub-region. New to a market? Start with its Gateway Guide.</p>
+      <div style="display: flex; gap: 8px; margin-top: 36px; flex-wrap: wrap">
+        <a href="Insights.dc.html" style="background: #FFFFFF; color: #0E1A2B; text-decoration: none; font-weight: 600; padding: 12px 20px; border-radius: 2px">Country profiles</a>
+        <a href="Insights.dc.html" style="border: 1px solid #5A6B84; color: #FFFFFF; text-decoration: none; padding: 12px 20px; border-radius: 2px">Gateway Guides</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div style="max-width: 1240px; margin: 0 auto; padding: 48px 24px 104px">
+      <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-end; justify-content: space-between; padding-bottom: 28px; border-bottom: 1px solid #E4DFD4">
+        <div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 8px">
+          <label for="q" style="font-size: 13px; font-weight: 600; color: #0E1A2B">Search countries</label>
+          <input id="q" type="search" value="{{query}}" onChange="{{onQuery}}" placeholder="Type a country name" style="font: inherit; font-size: 16px; padding: 14px 16px; border: 1px solid #B9B2A3; border-radius: 2px; background: #FFFFFF; color: #1A2433">
+        </div>
+        <div role="group" aria-label="Filter by region" style="flex: 2 1 480px; min-width: 0; display: flex; flex-wrap: wrap; gap: 8px">
+          <sc-for list="{{regions}}" as="r" hint-placeholder-count="6">
+            <button type="button" onClick="{{r.pick}}" aria-pressed="{{r.pressed}}" style="font: inherit; font-size: 14px; cursor: pointer; min-height: 44px; padding: 10px 16px; border-radius: 2px; border: 1px solid {{r.border}}; background: {{r.bg}}; color: {{r.fg}}">{{r.label}}</button>
+          </sc-for>
+        </div>
+      </div>
+
+      <p style="margin: 24px 0; font-size: 14px; color: #4A5568">{{countLine}}</p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px">
+        <sc-for list="{{shown}}" as="c" hint-placeholder-count="12">
+          <a href="#profile" style="background: {{c.tint}}; border: 1px solid {{c.band}}; border-top: 4px solid {{c.band}}; text-decoration: none; color: #0E1A2B; padding: 24px; display: flex; flex-direction: column; gap: 18px; min-height: 140px; justify-content: space-between">
+            <span style="display: flex; justify-content: space-between; align-items: flex-start; gap: 12px">
+              <span style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: 26px; font-weight: 600; line-height: 1.1">{{c.name}}</span>
+              <span style="font-size: 11px; font-weight: 600; letter-spacing: 0.06em; color: #7A5C2E; border: 1px solid #D5CEC0; padding: 2px 7px; border-radius: 2px">{{c.code}}</span>
+            </span>
+            <span style="display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: #4A5568">
+              <span>{{c.region}} · {{c.sub}}</span>
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7A5C2E" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+            </span>
+          </a>
+        </sc-for>
+      </div>
+      <sc-if value="{{empty}}" hint-placeholder-val="{{ false }}">
+        <p style="margin: 32px 0 0; font-size: 16px; color: #4A5568">No profiles match that search. Try another spelling or clear the region filter.</p>
+      </sc-if>
+    </div>
+  </section>
+
+  <footer style="background: #0E1A2B; color: #C7CFDA">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 40px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; font-size: 13px">
+      <span style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: 20px; color: #FFFFFF; letter-spacing: 0.08em">LORD WAVERLEY</span>
+      <span style="color: #DCCBA4; letter-spacing: 0.24em; text-transform: uppercase; font-size: 12px; align-self: center">Dialogue · Trust · Partnership</span>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1900}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { region: 'All', query: '' };
+  }
+  renderVals() {
+    var data = [
+      ['Angola','AO','Africa','Central'],['Central African Republic','CF','Africa','Central'],['Kenya','KE','Africa','East'],['Rwanda','RW','Africa','East'],
+      ['Morocco','MA','Africa','North'],['Nigeria','NG','Africa','West'],['Ghana','GH','Africa','West'],['South Africa','ZA','Africa','South'],
+      ['Brazil','BR','Americas','South'],['Colombia','CO','Americas','South'],['Mexico','MX','Americas','Central'],['Jamaica','JM','Americas','Caribbean'],
+      ['China','CN','Asia','East'],['India','IN','Asia','West'],['Indonesia','ID','Asia','South East'],['Vietnam','VN','Asia','East'],
+      ['Kazakhstan','KZ','Eurasia','Eurasia'],['Uzbekistan','UZ','Eurasia','Eurasia'],['Kyrgyzstan','KG','Eurasia','Eurasia'],['Azerbaijan','AZ','Eurasia','Eurasia'],
+      ['Saudi Arabia','SA','Middle East','Middle East'],['United Arab Emirates','AE','Middle East','Middle East'],['Iran','IR','Middle East','Middle East'],['Oman','OM','Middle East','Middle East']
+    ];
+    var self = this;
+    var region = this.state.region;
+    var q = (this.state.query || '').toLowerCase().trim();
+    var shown = data.filter(function (d) {
+      return (region === 'All' || d[2] === region) && (!q || d[0].toLowerCase().indexOf(q) !== -1);
+    }).map(function (d) {
+      var bands = { 'Africa': '#E3D3AE', 'Americas': '#D8B4BB', 'Asia': '#B3CEC3', 'Eurasia': '#B3C1D5', 'Middle East': '#E6C2A6' };
+      var tints = { 'Africa': '#F2E8D2', 'Americas': '#F0DFE2', 'Asia': '#DFECE6', 'Eurasia': '#DFE6F0', 'Middle East': '#F5E3D5' };
+      return { name: d[0], code: d[1], region: d[2], sub: d[3], band: bands[d[2]], tint: tints[d[2]] };
+    });
+    var regions = ['All', 'Africa', 'Americas', 'Asia', 'Eurasia', 'Middle East'].map(function (r) {
+      var on = r === region;
+      return {
+        label: r === 'All' ? 'All regions' : r,
+        pressed: on ? 'true' : 'false',
+        bg: on ? '#0E1A2B' : '#FFFFFF',
+        fg: on ? '#FFFFFF' : '#0E1A2B',
+        border: on ? '#0E1A2B' : '#D5CEC0',
+        pick: function () { self.setState({ region: r }); }
+      };
+    });
+    return {
+      regions: regions,
+      shown: shown,
+      empty: shown.length === 0,
+      query: this.state.query,
+      onQuery: function (e) { self.setState({ query: e.target.value }); },
+      countLine: 'Showing ' + shown.length + ' of 157 country profiles'
+    };
+  }
+}
+</script>
+</body>
+</html>
