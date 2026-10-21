@@ -6,6 +6,7 @@ Open index.html in any web browser to view the site. No build step or server is 
 CONTENTS
   index.html                 Homepage (hero, advisory, Country Insights, articles, biography, contact)
   country-insights.html      Country Insights page with working search and region filter
+  articles-speeches.html     All Articles & Speeches, in the original order, with filters by type
   assets/styles.css          All styling (colours are set as variables at the top of the file)
   assets/images/             Portrait photograph
   design-source/             Original design canvas files, for reference only
