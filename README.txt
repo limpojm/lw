@@ -6,6 +6,7 @@ Open index.html in any web browser to view the site. No build step or server is 
 CONTENTS
   index.html                 Homepage (hero, advisory, Country Insights, articles, biography, contact)
   country-insights.html      Country Insights page with working search and region filter
+  articles-speeches.html     All Articles & Speeches, in the original order, with filters by type
   assets/styles.css          All styling (colours are set as variables at the top of the file)
   assets/images/             Portrait photograph
   design-source/             Original design canvas files, for reference only
@@ -29,3 +30,13 @@ NOTES FOR THE DEVELOPER
   * Guide files are stored in assets/guides/html/ and assets/guides/pdf/.
   * Article links point to the existing files on www.lordwaverley.com.
   * The language selector (EN) is a placeholder for the 14 language versions.
+
+COUNTRY NAMING
+  * Timor-Leste must be shown as "East Timor" in headings and lists:
+      - Country Insights and Gateway Guides lists: "East Timor" (Asia, South East)
+      - Gateway Guide heading: "East Timor: Waverley Gateway Guide"
+      - Page title: "East Timor | Waverley Gateway Guide"
+    Already applied in assets/guides/html/east-timor.html and the guide catalogue.
+    Leave official organisation names in the body text unchanged, for example
+    "Banking and Payments Authority of Timor-Leste" and "TradeInvest Timor-Leste".
+    The same applies to Cabo Verde, shown as "Cape Verde".

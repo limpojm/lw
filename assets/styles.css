@@ -169,6 +169,28 @@ h1,h2,h3{margin:0}
 .empty{margin:32px 0 0;font-size:16px;color:var(--muted)}
 [hidden]{display:none !important}
 
+/* Articles & Speeches page */
+.more{margin:32px 0 0}
+.btn-outline{border:1px solid var(--navy);color:var(--navy)} .btn-outline:hover{background:var(--navy);color:#fff}
+.pubs{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.pub{display:grid;grid-template-columns:48px 170px 1fr auto;align-items:center;gap:24px;padding:26px 8px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--navy);background:transparent}
+.pub:hover{background:#fff;color:var(--navy)}
+.pub-num{font-size:13px;font-weight:600;color:#5E6878}
+.pub-kind{justify-self:start;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:5px 10px;border-radius:2px}
+.pk-papers{background:var(--navy);color:var(--champagne)}
+.pk-articles{background:#fff;color:var(--bronze);border:1px solid var(--line)}
+.pk-speeches{background:var(--teal);color:#F0D9A8}
+.pk-press{background:var(--champagne);color:#2A2416}
+.pub-title{font-family:var(--serif);font-size:26px;font-weight:600;line-height:1.2}
+.pub-go{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:500;color:var(--bronze);white-space:nowrap}
+.pubs li[hidden]{display:none}
+
+@media (max-width:760px){
+  .pub{grid-template-columns:auto 1fr;gap:10px 16px;padding:22px 4px}
+  .pub-title{grid-column:1 / -1;font-size:22px}
+  .pub-go{grid-column:1 / -1}
+}
+
 @media (max-width:640px){
   .section,.about .wrap,.contact .wrap{padding-top:64px;padding-bottom:64px}
   .hero .wrap{padding-top:56px;padding-bottom:64px}
