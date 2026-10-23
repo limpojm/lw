@@ -45,8 +45,11 @@ h1,h2,h3{margin:0}
 .regions{flex:1 1 320px;min-width:0;border:1px solid var(--navy-line);padding:28px 30px;background:var(--navy-2)}
 .regions p{margin:0 0 18px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--champagne)}
 .regions ol{list-style:none;margin:0;padding:0}
-.regions li{display:flex;gap:18px;padding:12px 0;border-bottom:1px solid var(--navy-line);font-family:var(--serif);font-size:24px}
+.regions li{border-bottom:1px solid var(--navy-line);font-family:var(--serif);font-size:24px}
 .regions li:last-child{border-bottom:0}
+.regions li a{display:flex;gap:18px;width:100%;padding:12px 0;color:inherit;text-decoration:none}
+.regions li a:hover{color:var(--champagne)}
+.regions li a:focus-visible{outline:2px solid var(--champagne);outline-offset:4px}
 .regions li span{font-family:var(--sans);font-size:12px;color:#8C9AB0;padding-top:9px}
 
 /* Stats */

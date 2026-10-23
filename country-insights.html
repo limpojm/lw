@@ -48,6 +48,7 @@
         <button type="button" data-region="Africa" aria-pressed="false">Africa</button>
         <button type="button" data-region="Americas" aria-pressed="false">Americas</button>
         <button type="button" data-region="Asia" aria-pressed="false">Asia</button>
+        <button type="button" data-region="China &amp; India" aria-pressed="false">China &amp; India</button>
         <button type="button" data-region="Eurasia" aria-pressed="false">Eurasia</button>
         <button type="button" data-region="Middle East" aria-pressed="false">Middle East</button>
       </div>
@@ -708,7 +709,9 @@
     var q = input.value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]/g, '');
     var n = 0;
     cards.forEach(function (c) {
-      var ok = (region === 'All' || c.dataset.region === region) && (!q || c.dataset.name.indexOf(q) !== -1);
+      var inRegion = region === 'All' || c.dataset.region === region ||
+        (region === 'China & India' && (c.dataset.name === 'china' || c.dataset.name === 'india'));
+      var ok = inRegion && (!q || c.dataset.name.indexOf(q) !== -1);
       c.hidden = !ok;
       if (ok) n++;
     });
