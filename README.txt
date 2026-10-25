@@ -17,7 +17,8 @@ COLOUR PALETTE
   Slate teal      #2F4B57   contact section, Video and Speech cards
   Bronze          #7A5C2E   small labels and links
   Paper           #F7F5F0   page background
-  Region tints    Africa #F2E8D2 · Americas #F0DFE2 · Asia #DFECE6 · Eurasia #DFE6F0 · Middle East #F5E3D5
+  Region tints    Africa #F2E8D2 · Middle East #F5E3D5 · Eurasia #DFE6F0 · Asia #DFECE6
+                  Latin America #F0DFE2 · Caribbean #EAE3F1
 
 FONTS (Google Fonts)
   Cormorant Garamond (headings) and Inter (body text)
@@ -40,3 +41,13 @@ COUNTRY NAMING
     Leave official organisation names in the body text unchanged, for example
     "Banking and Payments Authority of Timor-Leste" and "TradeInvest Timor-Leste".
     The same applies to Cabo Verde, shown as "Cape Verde".
+
+25 OCTOBER 2026 UPDATE
+  * Homepage and Country Insights incorporate the supplied 25 October pages.
+  * Six regions: Africa 55, Middle East 14, Eurasia 11, Asia 28,
+    Latin America 19, Caribbean 30. Existing Americas links still show all 49.
+  * Hero region links open the matching filter. Existing #all-countries links work.
+  * The supplied portrait is identical to assets/images/lord-waverley-portrait.jpg;
+    the homepage uses that existing file. No root images directory is needed.
+  * Both updated pages include their own styles. assets/styles.css continues
+    to style the guide viewer and articles page.
