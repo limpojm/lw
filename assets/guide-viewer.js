@@ -1,5 +1,7 @@
 (function () {
   'use strict';
+  // Bump this version when publishing revised HTML guides or PDFs.
+  var guideVersion = '20261102';
   var guides = {
   "algeria": [
     "Algeria",
@@ -644,7 +646,7 @@
   title.textContent = guide[0];
   document.title = guide[0] + ' | Lord Waverley Gateway Guide';
   frame.title = guide[0] + ' Gateway Guide';
-  pdf.href = 'assets/guides/pdf/' + guide[1];
+  pdf.href = 'assets/guides/pdf/' + guide[1] + '?v=' + guideVersion;
   pdf.setAttribute('aria-label', 'Download the PDF guide to ' + guide[0]);
   pdf.hidden = false;
   function unavailable() {
@@ -683,5 +685,5 @@
       status.hidden = true;
     }
   });
-  frame.src = 'assets/guides/html/' + country + '.html';
+  frame.src = 'assets/guides/html/' + country + '.html?v=' + guideVersion;
 })();
