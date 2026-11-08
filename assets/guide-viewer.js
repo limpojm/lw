@@ -1,7 +1,7 @@
 (function () {
   'use strict';
   // Bump this version when publishing revised HTML guides or PDFs.
-  var guideVersion = '20261102';
+  var guideVersion = '20261108';
   var guides = {
   "algeria": [
     "Algeria",
@@ -658,10 +658,10 @@
   frame.addEventListener('load', function () {
     try {
       var doc = frame.contentDocument;
-      if (!doc || !doc.querySelector('.sheet')) { unavailable(); return; }
+      if (!doc || !doc.querySelector('.sheet, main')) { unavailable(); return; }
       // Navigation belongs to this shared page; the source guide stays unchanged.
       var style = doc.createElement('style');
-      style.textContent = 'nav.back{display:none !important}html,body{overflow-y:hidden}';
+      style.textContent = 'nav.back,header.top,body>footer{display:none !important}html,body{overflow-y:hidden}';
       doc.head.appendChild(style);
       // Links within the document should navigate the full page, not the embedded frame.
       Array.prototype.forEach.call(doc.querySelectorAll('a'), function (link) {
