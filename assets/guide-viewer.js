@@ -1,227 +1,27 @@
 (function () {
   'use strict';
   // Bump this version when publishing revised HTML guides or PDFs.
-  var guideVersion = '20261108';
+  var guideVersion = '20261108-2';
   var guides = {
+  "afghanistan": [
+    "Afghanistan",
+    "Afghanistan_Gateway_Guide.pdf"
+  ],
+  "albania": [
+    "Albania",
+    "Albania_Gateway_Guide.pdf"
+  ],
   "algeria": [
     "Algeria",
     "Algeria_Gateway_Guide.pdf"
   ],
+  "andorra": [
+    "Andorra",
+    "Andorra_Gateway_Guide.pdf"
+  ],
   "angola": [
     "Angola",
     "Angola_Gateway_Guide.pdf"
-  ],
-  "benin": [
-    "Benin",
-    "Benin_Gateway_Guide.pdf"
-  ],
-  "botswana": [
-    "Botswana",
-    "Botswana_Gateway_Guide.pdf"
-  ],
-  "burkina-faso": [
-    "Burkina Faso",
-    "Burkina_Faso_Gateway_Guide.pdf"
-  ],
-  "burundi": [
-    "Burundi",
-    "Burundi_Gateway_Guide.pdf"
-  ],
-  "cape-verde": [
-    "Cape Verde",
-    "Cape_Verde_Gateway_Guide.pdf"
-  ],
-  "cameroon": [
-    "Cameroon",
-    "Cameroon_Gateway_Guide.pdf"
-  ],
-  "central-african-republic": [
-    "Central African Republic",
-    "Central_African_Republic_Gateway_Guide.pdf"
-  ],
-  "chad": [
-    "Chad",
-    "Chad_Gateway_Guide.pdf"
-  ],
-  "comoros": [
-    "Comoros",
-    "Comoros_Gateway_Guide.pdf"
-  ],
-  "congo-brazzaville": [
-    "Congo Brazzaville",
-    "Congo_Brazzaville_Gateway_Guide.pdf"
-  ],
-  "congo-drc": [
-    "Congo DRC",
-    "Congo_DRC_Gateway_Guide.pdf"
-  ],
-  "djibouti": [
-    "Djibouti",
-    "Djibouti_Gateway_Guide.pdf"
-  ],
-  "egypt": [
-    "Egypt",
-    "Egypt_Gateway_Guide.pdf"
-  ],
-  "equatorial-guinea": [
-    "Equatorial Guinea",
-    "Equatorial_Guinea_Gateway_Guide.pdf"
-  ],
-  "eritrea": [
-    "Eritrea",
-    "Eritrea_Gateway_Guide.pdf"
-  ],
-  "eswatini": [
-    "Eswatini",
-    "Eswatini_Gateway_Guide.pdf"
-  ],
-  "ethiopia": [
-    "Ethiopia",
-    "Ethiopia_Gateway_Guide.pdf"
-  ],
-  "gabon": [
-    "Gabon",
-    "Gabon_Gateway_Guide.pdf"
-  ],
-  "gambia": [
-    "Gambia",
-    "Gambia_Gateway_Guide.pdf"
-  ],
-  "ghana": [
-    "Ghana",
-    "Ghana_Gateway_Guide.pdf"
-  ],
-  "guinea-conakry": [
-    "Guinea Conakry",
-    "Guinea_Conakry_Gateway_Guide.pdf"
-  ],
-  "guinea-bissau": [
-    "Guinea-Bissau",
-    "Guinea-Bissau_Gateway_Guide.pdf"
-  ],
-  "ivory-coast": [
-    "Ivory Coast",
-    "Ivory_Coast_Gateway_Guide.pdf"
-  ],
-  "kenya": [
-    "Kenya",
-    "Kenya_Gateway_Guide.pdf"
-  ],
-  "lesotho": [
-    "Lesotho",
-    "Lesotho_Gateway_Guide.pdf"
-  ],
-  "liberia": [
-    "Liberia",
-    "Liberia_Gateway_Guide.pdf"
-  ],
-  "libya": [
-    "Libya",
-    "Libya_Gateway_Guide.pdf"
-  ],
-  "madagascar": [
-    "Madagascar",
-    "Madagascar_Gateway_Guide.pdf"
-  ],
-  "malawi": [
-    "Malawi",
-    "Malawi_Gateway_Guide.pdf"
-  ],
-  "mali": [
-    "Mali",
-    "Mali_Gateway_Guide.pdf"
-  ],
-  "mauritania": [
-    "Mauritania",
-    "Mauritania_Gateway_Guide.pdf"
-  ],
-  "mauritius": [
-    "Mauritius",
-    "Mauritius_Gateway_Guide.pdf"
-  ],
-  "morocco": [
-    "Morocco",
-    "Morocco_Gateway_Guide.pdf"
-  ],
-  "mozambique": [
-    "Mozambique",
-    "Mozambique_Gateway_Guide.pdf"
-  ],
-  "namibia": [
-    "Namibia",
-    "Namibia_Gateway_Guide.pdf"
-  ],
-  "niger": [
-    "Niger",
-    "Niger_Gateway_Guide.pdf"
-  ],
-  "nigeria": [
-    "Nigeria",
-    "Nigeria_Gateway_Guide.pdf"
-  ],
-  "rwanda": [
-    "Rwanda",
-    "Rwanda_Gateway_Guide.pdf"
-  ],
-  "reunion": [
-    "Réunion",
-    "R%C3%A9union_Gateway_Guide.pdf"
-  ],
-  "senegal": [
-    "Senegal",
-    "Senegal_Gateway_Guide.pdf"
-  ],
-  "seychelles": [
-    "Seychelles",
-    "Seychelles_Gateway_Guide.pdf"
-  ],
-  "sierra-leone": [
-    "Sierra Leone",
-    "Sierra_Leone_Gateway_Guide.pdf"
-  ],
-  "somalia": [
-    "Somalia",
-    "Somalia_Gateway_Guide.pdf"
-  ],
-  "south-africa": [
-    "South Africa",
-    "South_Africa_Gateway_Guide.pdf"
-  ],
-  "south-sudan": [
-    "South Sudan",
-    "South_Sudan_Gateway_Guide.pdf"
-  ],
-  "sudan": [
-    "Sudan",
-    "Sudan_Gateway_Guide.pdf"
-  ],
-  "sao-tome-and-principe": [
-    "São Tomé and Príncipe",
-    "S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe_Gateway_Guide.pdf"
-  ],
-  "tanzania": [
-    "Tanzania",
-    "Tanzania_Gateway_Guide.pdf"
-  ],
-  "togo": [
-    "Togo",
-    "Togo_Gateway_Guide.pdf"
-  ],
-  "tunisia": [
-    "Tunisia",
-    "Tunisia_Gateway_Guide.pdf"
-  ],
-  "uganda": [
-    "Uganda",
-    "Uganda_Gateway_Guide.pdf"
-  ],
-  "zambia": [
-    "Zambia",
-    "Zambia_Gateway_Guide.pdf"
-  ],
-  "zimbabwe": [
-    "Zimbabwe",
-    "Zimbabwe_Gateway_Guide.pdf"
   ],
   "anguilla": [
     "Anguilla",
@@ -235,29 +35,77 @@
     "Argentina",
     "Argentina_Gateway_Guide.pdf"
   ],
+  "armenia": [
+    "Armenia",
+    "Armenia_Gateway_Guide.pdf"
+  ],
   "aruba": [
     "Aruba",
     "Aruba_Gateway_Guide.pdf"
+  ],
+  "australia": [
+    "Australia",
+    "Australia_Gateway_Guide.pdf"
+  ],
+  "austria": [
+    "Austria",
+    "Austria_Gateway_Guide.pdf"
+  ],
+  "azerbaijan": [
+    "Azerbaijan",
+    "Azerbaijan_Gateway_Guide.pdf"
   ],
   "bahamas": [
     "Bahamas",
     "Bahamas_Gateway_Guide.pdf"
   ],
+  "bahrain": [
+    "Bahrain",
+    "Bahrain_Gateway_Guide.pdf"
+  ],
+  "bangladesh": [
+    "Bangladesh",
+    "Bangladesh_Gateway_Guide.pdf"
+  ],
   "barbados": [
     "Barbados",
     "Barbados_Gateway_Guide.pdf"
+  ],
+  "belarus": [
+    "Belarus",
+    "Belarus_Gateway_Guide.pdf"
+  ],
+  "belgium": [
+    "Belgium",
+    "Belgium_Gateway_Guide.pdf"
   ],
   "belize": [
     "Belize",
     "Belize_Gateway_Guide.pdf"
   ],
+  "benin": [
+    "Benin",
+    "Benin_Gateway_Guide.pdf"
+  ],
   "bermuda": [
     "Bermuda",
     "Bermuda_Gateway_Guide.pdf"
   ],
+  "bhutan": [
+    "Bhutan",
+    "Bhutan_Gateway_Guide.pdf"
+  ],
   "bolivia": [
     "Bolivia",
     "Bolivia_Gateway_Guide.pdf"
+  ],
+  "bosnia-and-herzegovina": [
+    "Bosnia and Herzegovina",
+    "Bosnia_and_Herzegovina_Gateway_Guide.pdf"
+  ],
+  "botswana": [
+    "Botswana",
+    "Botswana_Gateway_Guide.pdf"
   ],
   "brazil": [
     "Brazil",
@@ -267,21 +115,81 @@
     "British Virgin Islands",
     "British_Virgin_Islands_Gateway_Guide.pdf"
   ],
+  "brunei": [
+    "Brunei",
+    "Brunei_Gateway_Guide.pdf"
+  ],
+  "bulgaria": [
+    "Bulgaria",
+    "Bulgaria_Gateway_Guide.pdf"
+  ],
+  "burkina-faso": [
+    "Burkina Faso",
+    "Burkina_Faso_Gateway_Guide.pdf"
+  ],
+  "burundi": [
+    "Burundi",
+    "Burundi_Gateway_Guide.pdf"
+  ],
+  "cape-verde": [
+    "Cape Verde",
+    "Cape_Verde_Gateway_Guide.pdf"
+  ],
+  "cambodia": [
+    "Cambodia",
+    "Cambodia_Gateway_Guide.pdf"
+  ],
+  "cameroon": [
+    "Cameroon",
+    "Cameroon_Gateway_Guide.pdf"
+  ],
+  "canada": [
+    "Canada",
+    "Canada_Gateway_Guide.pdf"
+  ],
   "cayman-islands": [
     "Cayman Islands",
     "Cayman_Islands_Gateway_Guide.pdf"
+  ],
+  "central-african-republic": [
+    "Central African Republic",
+    "Central_African_Republic_Gateway_Guide.pdf"
+  ],
+  "chad": [
+    "Chad",
+    "Chad_Gateway_Guide.pdf"
   ],
   "chile": [
     "Chile",
     "Chile_Gateway_Guide.pdf"
   ],
+  "china": [
+    "China",
+    "China_Gateway_Guide.pdf"
+  ],
   "colombia": [
     "Colombia",
     "Colombia_Gateway_Guide.pdf"
   ],
+  "comoros": [
+    "Comoros",
+    "Comoros_Gateway_Guide.pdf"
+  ],
+  "congo-brazzaville": [
+    "Congo Brazzaville",
+    "Congo_Brazzaville_Gateway_Guide.pdf"
+  ],
+  "congo-drc": [
+    "Congo DRC",
+    "Congo_DRC_Gateway_Guide.pdf"
+  ],
   "costa-rica": [
     "Costa Rica",
     "Costa_Rica_Gateway_Guide.pdf"
+  ],
+  "croatia": [
+    "Croatia",
+    "Croatia_Gateway_Guide.pdf"
   ],
   "cuba": [
     "Cuba",
@@ -290,6 +198,22 @@
   "curacao": [
     "Curaçao",
     "Cura%C3%A7ao_Gateway_Guide.pdf"
+  ],
+  "cyprus": [
+    "Cyprus",
+    "Cyprus_Gateway_Guide.pdf"
+  ],
+  "czechia": [
+    "Czechia",
+    "Czechia_Gateway_Guide.pdf"
+  ],
+  "denmark": [
+    "Denmark",
+    "Denmark_Gateway_Guide.pdf"
+  ],
+  "djibouti": [
+    "Djibouti",
+    "Djibouti_Gateway_Guide.pdf"
   ],
   "dominica": [
     "Dominica",
@@ -303,17 +227,81 @@
     "Ecuador",
     "Ecuador_Gateway_Guide.pdf"
   ],
+  "egypt": [
+    "Egypt",
+    "Egypt_Gateway_Guide.pdf"
+  ],
   "el-salvador": [
     "El Salvador",
     "El_Salvador_Gateway_Guide.pdf"
+  ],
+  "equatorial-guinea": [
+    "Equatorial Guinea",
+    "Equatorial_Guinea_Gateway_Guide.pdf"
+  ],
+  "eritrea": [
+    "Eritrea",
+    "Eritrea_Gateway_Guide.pdf"
+  ],
+  "estonia": [
+    "Estonia",
+    "Estonia_Gateway_Guide.pdf"
+  ],
+  "eswatini": [
+    "Eswatini",
+    "Eswatini_Gateway_Guide.pdf"
+  ],
+  "ethiopia": [
+    "Ethiopia",
+    "Ethiopia_Gateway_Guide.pdf"
   ],
   "falkland-islands-malvinas": [
     "Falkland Islands / Malvinas",
     "Falkland_Islands_Malvinas_Gateway_Guide.pdf"
   ],
+  "fiji": [
+    "Fiji",
+    "Fiji_Gateway_Guide.pdf"
+  ],
+  "finland": [
+    "Finland",
+    "Finland_Gateway_Guide.pdf"
+  ],
+  "france": [
+    "France",
+    "France_Gateway_Guide.pdf"
+  ],
   "french-guiana": [
     "French Guiana",
     "French_Guiana_Gateway_Guide.pdf"
+  ],
+  "french-polynesia": [
+    "French Polynesia",
+    "French_Polynesia_Gateway_Guide.pdf"
+  ],
+  "gabon": [
+    "Gabon",
+    "Gabon_Gateway_Guide.pdf"
+  ],
+  "gambia": [
+    "Gambia",
+    "Gambia_Gateway_Guide.pdf"
+  ],
+  "georgia": [
+    "Georgia",
+    "Georgia_Gateway_Guide.pdf"
+  ],
+  "germany": [
+    "Germany",
+    "Germany_Gateway_Guide.pdf"
+  ],
+  "ghana": [
+    "Ghana",
+    "Ghana_Gateway_Guide.pdf"
+  ],
+  "greece": [
+    "Greece",
+    "Greece_Gateway_Guide.pdf"
   ],
   "grenada": [
     "Grenada",
@@ -327,6 +315,14 @@
     "Guatemala",
     "Guatemala_Gateway_Guide.pdf"
   ],
+  "guinea-conakry": [
+    "Guinea Conakry",
+    "Guinea_Conakry_Gateway_Guide.pdf"
+  ],
+  "guinea-bissau": [
+    "Guinea-Bissau",
+    "Guinea-Bissau_Gateway_Guide.pdf"
+  ],
   "guyana": [
     "Guyana",
     "Guyana_Gateway_Guide.pdf"
@@ -339,29 +335,249 @@
     "Honduras",
     "Honduras_Gateway_Guide.pdf"
   ],
+  "hungary": [
+    "Hungary",
+    "Hungary_Gateway_Guide.pdf"
+  ],
+  "iceland": [
+    "Iceland",
+    "Iceland_Gateway_Guide.pdf"
+  ],
+  "india": [
+    "India",
+    "India_Gateway_Guide.pdf"
+  ],
+  "indonesia": [
+    "Indonesia",
+    "Indonesia_Gateway_Guide.pdf"
+  ],
+  "iran": [
+    "Iran",
+    "Iran_Gateway_Guide.pdf"
+  ],
+  "iraq": [
+    "Iraq",
+    "Iraq_Gateway_Guide.pdf"
+  ],
+  "ireland": [
+    "Ireland",
+    "Ireland_Gateway_Guide.pdf"
+  ],
+  "israel": [
+    "Israel",
+    "Israel_Gateway_Guide.pdf"
+  ],
+  "italy": [
+    "Italy",
+    "Italy_Gateway_Guide.pdf"
+  ],
+  "ivory-coast": [
+    "Ivory Coast",
+    "Ivory_Coast_Gateway_Guide.pdf"
+  ],
   "jamaica": [
     "Jamaica",
     "Jamaica_Gateway_Guide.pdf"
+  ],
+  "japan": [
+    "Japan",
+    "Japan_Gateway_Guide.pdf"
+  ],
+  "jordan": [
+    "Jordan",
+    "Jordan_Gateway_Guide.pdf"
+  ],
+  "kazakhstan": [
+    "Kazakhstan",
+    "Kazakhstan_Gateway_Guide.pdf"
+  ],
+  "kenya": [
+    "Kenya",
+    "Kenya_Gateway_Guide.pdf"
+  ],
+  "kosovo": [
+    "Kosovo",
+    "Kosovo_Gateway_Guide.pdf"
+  ],
+  "kuwait": [
+    "Kuwait",
+    "Kuwait_Gateway_Guide.pdf"
+  ],
+  "kyrgyzstan": [
+    "Kyrgyzstan",
+    "Kyrgyzstan_Gateway_Guide.pdf"
+  ],
+  "laos": [
+    "Laos",
+    "Laos_Gateway_Guide.pdf"
+  ],
+  "latvia": [
+    "Latvia",
+    "Latvia_Gateway_Guide.pdf"
+  ],
+  "lebanon": [
+    "Lebanon",
+    "Lebanon_Gateway_Guide.pdf"
+  ],
+  "lesotho": [
+    "Lesotho",
+    "Lesotho_Gateway_Guide.pdf"
+  ],
+  "liberia": [
+    "Liberia",
+    "Liberia_Gateway_Guide.pdf"
+  ],
+  "libya": [
+    "Libya",
+    "Libya_Gateway_Guide.pdf"
+  ],
+  "liechtenstein": [
+    "Liechtenstein",
+    "Liechtenstein_Gateway_Guide.pdf"
+  ],
+  "lithuania": [
+    "Lithuania",
+    "Lithuania_Gateway_Guide.pdf"
+  ],
+  "luxembourg": [
+    "Luxembourg",
+    "Luxembourg_Gateway_Guide.pdf"
+  ],
+  "madagascar": [
+    "Madagascar",
+    "Madagascar_Gateway_Guide.pdf"
+  ],
+  "malawi": [
+    "Malawi",
+    "Malawi_Gateway_Guide.pdf"
+  ],
+  "malaysia": [
+    "Malaysia",
+    "Malaysia_Gateway_Guide.pdf"
+  ],
+  "maldives": [
+    "Maldives",
+    "Maldives_Gateway_Guide.pdf"
+  ],
+  "mali": [
+    "Mali",
+    "Mali_Gateway_Guide.pdf"
+  ],
+  "malta": [
+    "Malta",
+    "Malta_Gateway_Guide.pdf"
   ],
   "martinique": [
     "Martinique",
     "Martinique_Gateway_Guide.pdf"
   ],
+  "mauritania": [
+    "Mauritania",
+    "Mauritania_Gateway_Guide.pdf"
+  ],
+  "mauritius": [
+    "Mauritius",
+    "Mauritius_Gateway_Guide.pdf"
+  ],
   "mexico": [
     "Mexico",
     "Mexico_Gateway_Guide.pdf"
+  ],
+  "moldova": [
+    "Moldova",
+    "Moldova_Gateway_Guide.pdf"
+  ],
+  "monaco": [
+    "Monaco",
+    "Monaco_Gateway_Guide.pdf"
+  ],
+  "mongolia": [
+    "Mongolia",
+    "Mongolia_Gateway_Guide.pdf"
+  ],
+  "montenegro": [
+    "Montenegro",
+    "Montenegro_Gateway_Guide.pdf"
   ],
   "montserrat": [
     "Montserrat",
     "Montserrat_Gateway_Guide.pdf"
   ],
+  "morocco": [
+    "Morocco",
+    "Morocco_Gateway_Guide.pdf"
+  ],
+  "mozambique": [
+    "Mozambique",
+    "Mozambique_Gateway_Guide.pdf"
+  ],
+  "myanmar": [
+    "Myanmar",
+    "Myanmar_Gateway_Guide.pdf"
+  ],
+  "namibia": [
+    "Namibia",
+    "Namibia_Gateway_Guide.pdf"
+  ],
+  "nepal": [
+    "Nepal",
+    "Nepal_Gateway_Guide.pdf"
+  ],
+  "netherlands": [
+    "Netherlands",
+    "Netherlands_Gateway_Guide.pdf"
+  ],
+  "new-caledonia": [
+    "New Caledonia",
+    "New_Caledonia_Gateway_Guide.pdf"
+  ],
+  "new-zealand": [
+    "New Zealand",
+    "New_Zealand_Gateway_Guide.pdf"
+  ],
   "nicaragua": [
     "Nicaragua",
     "Nicaragua_Gateway_Guide.pdf"
   ],
+  "niger": [
+    "Niger",
+    "Niger_Gateway_Guide.pdf"
+  ],
+  "nigeria": [
+    "Nigeria",
+    "Nigeria_Gateway_Guide.pdf"
+  ],
+  "north-korea": [
+    "North Korea",
+    "North_Korea_Gateway_Guide.pdf"
+  ],
+  "north-macedonia": [
+    "North Macedonia",
+    "North_Macedonia_Gateway_Guide.pdf"
+  ],
+  "norway": [
+    "Norway",
+    "Norway_Gateway_Guide.pdf"
+  ],
+  "oman": [
+    "Oman",
+    "Oman_Gateway_Guide.pdf"
+  ],
+  "pakistan": [
+    "Pakistan",
+    "Pakistan_Gateway_Guide.pdf"
+  ],
+  "palestine": [
+    "Palestine (West Bank and Gaza)",
+    "Palestine_%28West_Bank_and_Gaza%29_Gateway_Guide.pdf"
+  ],
   "panama": [
     "Panama",
     "Panama_Gateway_Guide.pdf"
+  ],
+  "papua-new-guinea": [
+    "Papua New Guinea",
+    "Papua_New_Guinea_Gateway_Guide.pdf"
   ],
   "paraguay": [
     "Paraguay",
@@ -371,9 +587,41 @@
     "Peru",
     "Peru_Gateway_Guide.pdf"
   ],
+  "philippines": [
+    "Philippines",
+    "Philippines_Gateway_Guide.pdf"
+  ],
+  "poland": [
+    "Poland",
+    "Poland_Gateway_Guide.pdf"
+  ],
+  "portugal": [
+    "Portugal",
+    "Portugal_Gateway_Guide.pdf"
+  ],
   "puerto-rico": [
     "Puerto Rico",
     "Puerto_Rico_Gateway_Guide.pdf"
+  ],
+  "qatar": [
+    "Qatar",
+    "Qatar_Gateway_Guide.pdf"
+  ],
+  "romania": [
+    "Romania",
+    "Romania_Gateway_Guide.pdf"
+  ],
+  "russia": [
+    "Russia",
+    "Russia_Gateway_Guide.pdf"
+  ],
+  "rwanda": [
+    "Rwanda",
+    "Rwanda_Gateway_Guide.pdf"
+  ],
+  "reunion": [
+    "Réunion",
+    "R%C3%A9union_Gateway_Guide.pdf"
   ],
   "saint-kitts-and-nevis": [
     "Saint Kitts and Nevis",
@@ -391,133 +639,113 @@
     "Saint Vincent and the Grenadines",
     "Saint_Vincent_and_the_Grenadines_Gateway_Guide.pdf"
   ],
-  "sint-maarten": [
-    "Sint Maarten",
-    "Sint_Maarten_Gateway_Guide.pdf"
+  "samoa": [
+    "Samoa",
+    "Samoa_Gateway_Guide.pdf"
   ],
-  "suriname": [
-    "Suriname",
-    "Suriname_Gateway_Guide.pdf"
+  "san-marino": [
+    "San Marino",
+    "San_Marino_Gateway_Guide.pdf"
   ],
-  "trinidad-and-tobago": [
-    "Trinidad and Tobago",
-    "Trinidad_and_Tobago_Gateway_Guide.pdf"
+  "saudi-arabia": [
+    "Saudi Arabia",
+    "Saudi_Arabia_Gateway_Guide.pdf"
   ],
-  "turks-and-caicos-islands": [
-    "Turks and Caicos Islands",
-    "Turks_and_Caicos_Islands_Gateway_Guide.pdf"
+  "senegal": [
+    "Senegal",
+    "Senegal_Gateway_Guide.pdf"
   ],
-  "uruguay": [
-    "Uruguay",
-    "Uruguay_Gateway_Guide.pdf"
+  "serbia": [
+    "Serbia",
+    "Serbia_Gateway_Guide.pdf"
   ],
-  "us-virgin-islands": [
-    "US Virgin Islands",
-    "US_Virgin_Islands_Gateway_Guide.pdf"
+  "seychelles": [
+    "Seychelles",
+    "Seychelles_Gateway_Guide.pdf"
   ],
-  "venezuela": [
-    "Venezuela",
-    "Venezuela_Gateway_Guide.pdf"
-  ],
-  "australia": [
-    "Australia",
-    "Australia_Gateway_Guide.pdf"
-  ],
-  "bangladesh": [
-    "Bangladesh",
-    "Bangladesh_Gateway_Guide.pdf"
-  ],
-  "bhutan": [
-    "Bhutan",
-    "Bhutan_Gateway_Guide.pdf"
-  ],
-  "brunei": [
-    "Brunei",
-    "Brunei_Gateway_Guide.pdf"
-  ],
-  "cambodia": [
-    "Cambodia",
-    "Cambodia_Gateway_Guide.pdf"
-  ],
-  "china": [
-    "China",
-    "China_Gateway_Guide.pdf"
-  ],
-  "india": [
-    "India",
-    "India_Gateway_Guide.pdf"
-  ],
-  "indonesia": [
-    "Indonesia",
-    "Indonesia_Gateway_Guide.pdf"
-  ],
-  "japan": [
-    "Japan",
-    "Japan_Gateway_Guide.pdf"
-  ],
-  "laos": [
-    "Laos",
-    "Laos_Gateway_Guide.pdf"
-  ],
-  "malaysia": [
-    "Malaysia",
-    "Malaysia_Gateway_Guide.pdf"
-  ],
-  "maldives": [
-    "Maldives",
-    "Maldives_Gateway_Guide.pdf"
-  ],
-  "mongolia": [
-    "Mongolia",
-    "Mongolia_Gateway_Guide.pdf"
-  ],
-  "myanmar": [
-    "Myanmar",
-    "Myanmar_Gateway_Guide.pdf"
-  ],
-  "nepal": [
-    "Nepal",
-    "Nepal_Gateway_Guide.pdf"
-  ],
-  "new-zealand": [
-    "New Zealand",
-    "New_Zealand_Gateway_Guide.pdf"
-  ],
-  "north-korea": [
-    "North Korea",
-    "North_Korea_Gateway_Guide.pdf"
-  ],
-  "pakistan": [
-    "Pakistan",
-    "Pakistan_Gateway_Guide.pdf"
-  ],
-  "papua-new-guinea": [
-    "Papua New Guinea",
-    "Papua_New_Guinea_Gateway_Guide.pdf"
-  ],
-  "philippines": [
-    "Philippines",
-    "Philippines_Gateway_Guide.pdf"
+  "sierra-leone": [
+    "Sierra Leone",
+    "Sierra_Leone_Gateway_Guide.pdf"
   ],
   "singapore": [
     "Singapore",
     "Singapore_Gateway_Guide.pdf"
   ],
+  "sint-maarten": [
+    "Sint Maarten",
+    "Sint_Maarten_Gateway_Guide.pdf"
+  ],
+  "slovakia": [
+    "Slovakia",
+    "Slovakia_Gateway_Guide.pdf"
+  ],
+  "slovenia": [
+    "Slovenia",
+    "Slovenia_Gateway_Guide.pdf"
+  ],
   "solomon-islands": [
     "Solomon Islands",
     "Solomon_Islands_Gateway_Guide.pdf"
+  ],
+  "somalia": [
+    "Somalia",
+    "Somalia_Gateway_Guide.pdf"
+  ],
+  "south-africa": [
+    "South Africa",
+    "South_Africa_Gateway_Guide.pdf"
   ],
   "south-korea": [
     "South Korea",
     "South_Korea_Gateway_Guide.pdf"
   ],
+  "south-sudan": [
+    "South Sudan",
+    "South_Sudan_Gateway_Guide.pdf"
+  ],
+  "spain": [
+    "Spain",
+    "Spain_Gateway_Guide.pdf"
+  ],
   "sri-lanka": [
     "Sri Lanka",
     "Sri_Lanka_Gateway_Guide.pdf"
   ],
+  "sudan": [
+    "Sudan",
+    "Sudan_Gateway_Guide.pdf"
+  ],
+  "suriname": [
+    "Suriname",
+    "Suriname_Gateway_Guide.pdf"
+  ],
+  "sweden": [
+    "Sweden",
+    "Sweden_Gateway_Guide.pdf"
+  ],
+  "switzerland": [
+    "Switzerland",
+    "Switzerland_Gateway_Guide.pdf"
+  ],
+  "syria": [
+    "Syria",
+    "Syria_Gateway_Guide.pdf"
+  ],
+  "sao-tome-and-principe": [
+    "São Tomé and Príncipe",
+    "S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe_Gateway_Guide.pdf"
+  ],
   "taiwan": [
     "Taiwan",
     "Taiwan_Gateway_Guide.pdf"
+  ],
+  "tajikistan": [
+    "Tajikistan",
+    "Tajikistan_Gateway_Guide.pdf"
+  ],
+  "tanzania": [
+    "Tanzania",
+    "Tanzania_Gateway_Guide.pdf"
   ],
   "thailand": [
     "Thailand",
@@ -527,41 +755,21 @@
     "East Timor",
     "East_Timor_Gateway_Guide.pdf"
   ],
-  "vietnam": [
-    "Vietnam",
-    "Vietnam_Gateway_Guide.pdf"
+  "togo": [
+    "Togo",
+    "Togo_Gateway_Guide.pdf"
   ],
-  "afghanistan": [
-    "Afghanistan",
-    "Afghanistan_Gateway_Guide.pdf"
+  "tonga": [
+    "Tonga",
+    "Tonga_Gateway_Guide.pdf"
   ],
-  "armenia": [
-    "Armenia",
-    "Armenia_Gateway_Guide.pdf"
+  "trinidad-and-tobago": [
+    "Trinidad and Tobago",
+    "Trinidad_and_Tobago_Gateway_Guide.pdf"
   ],
-  "azerbaijan": [
-    "Azerbaijan",
-    "Azerbaijan_Gateway_Guide.pdf"
-  ],
-  "georgia": [
-    "Georgia",
-    "Georgia_Gateway_Guide.pdf"
-  ],
-  "kazakhstan": [
-    "Kazakhstan",
-    "Kazakhstan_Gateway_Guide.pdf"
-  ],
-  "kyrgyzstan": [
-    "Kyrgyzstan",
-    "Kyrgyzstan_Gateway_Guide.pdf"
-  ],
-  "russia": [
-    "Russia",
-    "Russia_Gateway_Guide.pdf"
-  ],
-  "tajikistan": [
-    "Tajikistan",
-    "Tajikistan_Gateway_Guide.pdf"
+  "tunisia": [
+    "Tunisia",
+    "Tunisia_Gateway_Guide.pdf"
   ],
   "turkey": [
     "Turkey",
@@ -571,65 +779,65 @@
     "Turkmenistan",
     "Turkmenistan_Gateway_Guide.pdf"
   ],
-  "uzbekistan": [
-    "Uzbekistan",
-    "Uzbekistan_Gateway_Guide.pdf"
+  "turks-and-caicos-islands": [
+    "Turks and Caicos Islands",
+    "Turks_and_Caicos_Islands_Gateway_Guide.pdf"
   ],
-  "bahrain": [
-    "Bahrain",
-    "Bahrain_Gateway_Guide.pdf"
+  "uganda": [
+    "Uganda",
+    "Uganda_Gateway_Guide.pdf"
   ],
-  "iran": [
-    "Iran",
-    "Iran_Gateway_Guide.pdf"
-  ],
-  "iraq": [
-    "Iraq",
-    "Iraq_Gateway_Guide.pdf"
-  ],
-  "israel": [
-    "Israel",
-    "Israel_Gateway_Guide.pdf"
-  ],
-  "jordan": [
-    "Jordan",
-    "Jordan_Gateway_Guide.pdf"
-  ],
-  "kuwait": [
-    "Kuwait",
-    "Kuwait_Gateway_Guide.pdf"
-  ],
-  "lebanon": [
-    "Lebanon",
-    "Lebanon_Gateway_Guide.pdf"
-  ],
-  "oman": [
-    "Oman",
-    "Oman_Gateway_Guide.pdf"
-  ],
-  "palestine": [
-    "Palestine (West Bank and Gaza)",
-    "Palestine_%28West_Bank_and_Gaza%29_Gateway_Guide.pdf"
-  ],
-  "qatar": [
-    "Qatar",
-    "Qatar_Gateway_Guide.pdf"
-  ],
-  "saudi-arabia": [
-    "Saudi Arabia",
-    "Saudi_Arabia_Gateway_Guide.pdf"
-  ],
-  "syria": [
-    "Syria",
-    "Syria_Gateway_Guide.pdf"
+  "ukraine": [
+    "Ukraine",
+    "Ukraine_Gateway_Guide.pdf"
   ],
   "united-arab-emirates": [
     "United Arab Emirates",
     "United_Arab_Emirates_Gateway_Guide.pdf"
   ],
+  "united-kingdom": [
+    "United Kingdom",
+    "United_Kingdom_Gateway_Guide.pdf"
+  ],
+  "united-states": [
+    "United States",
+    "United_States_Gateway_Guide.pdf"
+  ],
+  "uruguay": [
+    "Uruguay",
+    "Uruguay_Gateway_Guide.pdf"
+  ],
+  "us-virgin-islands": [
+    "US Virgin Islands",
+    "US_Virgin_Islands_Gateway_Guide.pdf"
+  ],
+  "uzbekistan": [
+    "Uzbekistan",
+    "Uzbekistan_Gateway_Guide.pdf"
+  ],
+  "vanuatu": [
+    "Vanuatu",
+    "Vanuatu_Gateway_Guide.pdf"
+  ],
+  "venezuela": [
+    "Venezuela",
+    "Venezuela_Gateway_Guide.pdf"
+  ],
+  "vietnam": [
+    "Vietnam",
+    "Vietnam_Gateway_Guide.pdf"
+  ],
   "yemen": [
     "Yemen",
     "Yemen_Gateway_Guide.pdf"
+  ],
+  "zambia": [
+    "Zambia",
+    "Zambia_Gateway_Guide.pdf"
+  ],
+  "zimbabwe": [
+    "Zimbabwe",
+    "Zimbabwe_Gateway_Guide.pdf"
   ]
 };
   var country = new URLSearchParams(location.search).get('country');
