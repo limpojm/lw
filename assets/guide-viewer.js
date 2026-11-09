@@ -1,7 +1,7 @@
 (function () {
   'use strict';
   // Bump this version when publishing revised HTML guides or PDFs.
-  var guideVersion = '20261108-2';
+  var guideVersion = '20261109';
   var guides = {
   "afghanistan": [
     "Afghanistan",
